@@ -8,8 +8,9 @@ const Header = () => {
     <header className={`${styles.header} container fluid `}>
       <div className={styles.headerWrapper}>
         <Link href="/" className={styles.logo}>
-          <FaPlayCircle />
-          NETFILMS
+          <span className={styles.playCircle}><FaPlayCircle /></span>
+          <span className={styles.logoName}>A&amp;E</span>
+          <span className={styles.filmTitle}>films</span>
         </Link>
         <nav className={styles.navigationMenu}>
           <Link href="/">Movies</Link>

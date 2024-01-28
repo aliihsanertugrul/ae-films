@@ -12,11 +12,48 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    /* gap: 8px; */
     font-size: 24px;
     font-weight: 700;
     letter-spacing: -1px;
     color: #fafafa;
+    position: relative;
+  }
+
+  /* .logo::after{
+    content: "FILMS";
+    font-family: ;
+    top: 3px;
+    left: 30px;
+    font-size: 1.6rem;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    color: red;
+    letter-spacing: -1px;
+    z-index: -1;
+
+  } */
+
+  .logoName{
+    font-size: 24px;
+    font-family: 'Shojumaru', system-ui;
+  }
+
+  .playCircle{
+    margin-right: 8px;
+    
+  }
+
+  .filmTitle{
+    color: #e50914;
+    font-size:28px;
+    padding-top:2px;
+    font-family: 'EB Garamond', serif;
+    opacity: 0.8;
+    
+    /* font-style: italic; */
+
   }
   
   .navigationMenu {
@@ -26,3 +63,5 @@
     font-weight: 700;
     letter-spacing: 2px;
   }
+
+  
