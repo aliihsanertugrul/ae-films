@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 
 function MoviesSection({ title, movies }) {
-  console.log(title)
+  // console.log(title)
   return (
     <div className={styles.moviesSection}>
       <h3 className={styles.title}>{title}</h3>
@@ -27,4 +27,4 @@ function MoviesSection({ title, movies }) {
 }
 
 // export { MoviesSectionLoading } from "./loading";
-export { MoviesSection };
+export default MoviesSection ;

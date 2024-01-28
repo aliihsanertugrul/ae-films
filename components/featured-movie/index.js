@@ -6,7 +6,8 @@ import { FaPlus } from "react-icons/fa";
 import styles from "./styles.module.css";
 
 function FeaturedMovie({ movie = {}, isCompact = true }) {
-  const { poster_path, title, overview } = movie;
+  const { poster_path, title, overview,id } = movie;
+  
 
   return (
     <div className={styles.movieWrapper}>
@@ -19,7 +20,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
         {overview}
       </p>
       <div className={styles.actionButtons}>
-        <Link className={styles.playButton} href={`/movie/${movie.id}`}>
+        <Link className={styles.playButton} href={`/movie/${id}`}>
           Play
         </Link>
         <button className={styles.addButton}>
@@ -40,4 +41,4 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
 }
 
 // export { FeatureMovieLoading } from "./loading";
-export { FeaturedMovie };
+export default FeaturedMovie ;

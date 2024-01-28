@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./styles.module.css";
-import categories from "@/mocks/genres.json"
+
 
 function MovieCategories({categories}) {
+  // console.log(categories)
   return (
     <div className={styles.categories}>
       {categories.map((category) => (
